@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200&family=Inter:wght@100..900&family=Merienda:wght@300..900&family=Roboto&family=Work+Sans&display=swap');
+
+/* Define CSS Variables for Reusability */
+:root {
+    --bg-color: blanchedalmond;
+    --primary-color: rgb(109, 50, 3);
+    --hover-color: burlywood;
+    --border-color: rgb(127, 62, 2);
+    --font-family-merienda: 'Merienda', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    max-height: 150px;
+    background-color: #fff;
+}
+
+.logo-waagnbi {
+    transform: scale(1);
+    transition: transform 0.7s ease;
+}
+.logo-waagnbi:hover{
+    transform:scale(1.2); 
+}
+
+.custom-nav {
+    margin-left: auto;
+}
+
+.nav-link-custom {
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Merienda", cursive !important;
+    color: rgb(109, 50, 3) !important;
+    font-weight: 700 !important;
+}
+
+.nav-link-custom:hover {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.login {
+    color: rgb(109, 50, 3) !important;
+}
+
+.login:hover {
+    color: burlywood !important;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 15em;
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    .custom-nav {
+        margin: 0;
+        /* Remove margin for smaller screens */
+    }
+
+    .nav-link-custom {
+        display: block;
+        /* Display links as block elements for stacking */
+        margin: 10px 0;
+        /* Add vertical margin for spacing */
+        font-size: 14px !important;
+        /* Further decrease font size for smaller screens */
+    }
+
+    .login {
+        margin: 10px auto;
+        /* Center login element with margin */
+    }
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../images/Thieboudiene.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center the text horizontally */
+
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+    color: white;
+    margin-top: 0;
+    font-family: var(--font-family-merienda);
+    
+}
+
+.button-input {
+    width: 70%;
+    margin: 50px auto 0 auto;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    .jumbotron h1,
+    .jumbotron h2 {
+        margin-top: 20px;
+    }
+
+    .button-input {
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+/* Meals Styles */
+
+.meals-container{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+flex-basis: auto;
+padding-top: 50px;
+
+}
+
+.meal-card {
+    height: 5% !important;
+    border-radius: 10% !; 
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center !important;
+    align-items: center I !important;
+
+}
+
+.meal-card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+
+}
+
+.card-body{
+    background-color: var(--bg-color);
+    height: 150px !important;
+}
+.overflow{
+    overflow: hidden;
+}
+
+.card-img{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+/* .card-img:hover{
+    transform:scale(1.5); 
+} */
+
+.card-btn{
+    background-color:rgb(250, 215, 174) !important;
+    font-weight: 700 !important;
+    color: var(--border-color) !important;
+    border-color: var(--border-color) !important;
+    border: 0px solid var(--border-color) !important;
+    padding: 10px 20px;
+    cursor: pointer; 
+    text-align: center;
+    margin-left: 30%!important;
+    transform: scale(0.9);
+    transition: transform 0.7s ease;
+}
+
+.card-btn:hover {
+    transform:scale(1.2); 
+
+}
+
+.card-title{
+    text-align: center !important;
+    color: var(--border-color) !important;
+}
