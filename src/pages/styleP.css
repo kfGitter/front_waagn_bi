@@ -1,0 +1,16 @@
+.err-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../images/finished-plate.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.err-h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}

@@ -14,19 +14,23 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Navbar Styles */
+/* -----------------------------------------Navbar Styles------------------------------- */
+
 .navbar {
     display: flex;
     max-height: 150px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #e9ecef;
+
 }
 
 .logo-waagnbi {
     transform: scale(1);
     transition: transform 0.7s ease;
 }
-.logo-waagnbi:hover{
-    transform:scale(1.2); 
+
+.logo-waagnbi:hover {
+    transform: scale(1.2);
 }
 
 .custom-nav {
@@ -84,7 +88,7 @@ body {
     }
 }
 
-/* Jumbotron Styles */
+/* -----------------------------------------Jumbotron Styles------------------------------- */
 .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../images/Thieboudiene.webp");
     background-repeat: no-repeat;
@@ -96,7 +100,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
+    /* Center the text horizontally */
 
 }
 
@@ -105,7 +110,7 @@ body {
     color: white;
     margin-top: 0;
     font-family: var(--font-family-merienda);
-    
+
 }
 
 .button-input {
@@ -130,70 +135,151 @@ body {
     }
 }
 
-/* Meals Styles */
+/* -----------------------------------------Meals Styles ------------------------------- */
+.meals-h1 {
+    font-family: var(--font-family-merienda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
 
-.meals-container{
+.meals-container {
 
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-flex-basis: auto;
-padding-top: 50px;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: auto;
+    padding-top: 50px;
 
 }
 
 .meal-card {
-    height: 5% !important;
-    border-radius: 10% !; 
     display: flex;
     margin-bottom: 20px;
     justify-content: center !important;
     align-items: center I !important;
-
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 3px 7px 15px 0.7px rgba(0, 0, 0, 0.125) !important;
 }
 
 .meal-card:hover {
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+    box-shadow: 5px 10px 20px 1px rgba(50, 55, 3, 0.539) !important;
+    transform: translateY(-5px);
 
 }
 
-.card-body{
-    background-color: var(--bg-color);
+.card-body {
+    background-color: white;
     height: 150px !important;
 }
-.overflow{
+
+.overflow {
     overflow: hidden;
+    border-style: none !important;
+    border-color: #fff;
+    border-radius: 3% !important;
 }
 
-.card-img{
+.card-img {
     transform: scale(1);
     transition: transform 0.5s ease;
 }
 
 /* .card-img:hover{
-    transform:scale(1.5); 
+    transform:scale(1.2); 
 } */
 
-.card-btn{
-    background-color:rgb(250, 215, 174) !important;
-    font-weight: 700 !important;
-    color: var(--border-color) !important;
-    border-color: var(--border-color) !important;
-    border: 0px solid var(--border-color) !important;
+.card-btn {
+    background-color: #fff !important;
+    border: solid 2px rgb(250, 215, 174) !important;
+    font-weight: 500 !important;
+    color: rgb(240, 188, 130) !important;
     padding: 10px 20px;
-    cursor: pointer; 
+    cursor: pointer;
     text-align: center;
-    margin-left: 30%!important;
+    margin-left: 30% !important;
     transform: scale(0.9);
     transition: transform 0.7s ease;
 }
 
 .card-btn:hover {
-    transform:scale(1.2); 
+    transform: scale(1.2);
 
 }
 
-.card-title{
+.card-title {
     text-align: center !important;
     color: var(--border-color) !important;
+}
+
+/* -----------------------------------------Footer Styles------------------------------- */
+.full-footer {
+    background-color: rgb(255, 247, 234);
+    color: var(--border-color);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.recap-nav .list-recap-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.recap-nav-li a {
+    text-decoration: none;
+    color: rgba(143, 79, 27, 0.845);
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: color 0.3s;
+}
+
+.recap-nav-li a:hover {
+    color: #f6c53e;
+}
+
+.smd-icons .list-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.icon a {
+    color: rgba(143, 79, 27, 0.845);
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.icon a:hover {
+    color: #f6c53e;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyrights {
+    font-size: 0.7em;
+    color: #6c757d;
+    font-family: var(--font-family-merienda);
+    color: #c9946b;
 }

@@ -1,12 +1,13 @@
-import React, { useContext,useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Jumbotron from '../components/Jumbotron'
 import MealsContainer from '../components/MealsContainer'
 import axios from "axios";
 import { MyContext } from '../context';
+import Footer from '../components/Footer';
 // import { useEffect, useState } from "react";
 
 function Home() {
-    const {meals, setMeals} = useContext(MyContext);
+    const { meals, setMeals } = useContext(MyContext);
     useEffect(() => {
         axios
             .get("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
@@ -18,6 +19,7 @@ function Home() {
         <>
             <Jumbotron />
             <MealsContainer meals={meals} />
+            <Footer />
         </>
     )
 }
