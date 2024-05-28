@@ -7,6 +7,8 @@ import AppContext from "./context";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from "./pages/Login";
 import Signup from './pages/Signup';
+import FoodScience from "./pages/FoodScience";
+import Astuces from "./pages/Astuces";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/astuces" element={<Astuces />} />
+          <Route path="/food-science" element={<FoodScience />} />
         </Routes>
       </AppContext>
     </Router>

@@ -222,6 +222,7 @@ body {
     background-color: rgb(255, 247, 234);
     color: var(--border-color);
     padding: 20px;
+    margin-bottom: 0 !important;
     font-family: 'Arial', sans-serif;
     border-top: 1px solid #e9ecef;
 }

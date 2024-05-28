@@ -29,22 +29,22 @@ function AppNavbar() {
                             <Nav.Link className="nav-link-custom">Recettes</Nav.Link>
                         </LinkContainer>
 
-                        <LinkContainer to="/">
+                        <LinkContainer to="/astuces">
                             <Nav.Link className="nav-link-custom">Astuces</Nav.Link>
                         </LinkContainer>
 
-                        <LinkContainer to="/">
+                        {/* <LinkContainer to="/">
                             <Nav.Link className="nav-link-custom">Cuisine du Monde</Nav.Link>
-                        </LinkContainer>
+                        </LinkContainer> */}
 
-                        <LinkContainer to="/">
-                            <Nav.Link className="nav-link-custom">Le Saviez-vous?</Nav.Link>
+                        <LinkContainer to="/food-science">
+                            <Nav.Link className="nav-link-custom">Food Science</Nav.Link>
                         </LinkContainer>
 
                     </Nav>
 
                     <Nav className="login">
-                        <LinkContainer to="/signup">
+                        <LinkContainer to="/login">
                             <FaUser style={{ fontSize: '20px' }} />
                         </LinkContainer>
                     </Nav>
