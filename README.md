@@ -8,6 +8,8 @@ There are six primary pages: the homepage, sign-up/login, food recipes, science 
 The tips page offers a wealth of culinary wisdom through engaging articles, while the food science section explores the nutritional benefits of different foods. Authentication is securely handled through a back-end developed with MongoDB, Express.js, and Node.js, ensuring safe storage and verification of user data.
 
 This MERN project showcases my technical skills and ignites my passion for continuous improvement. As I continue my programming journey, I am committed to refining and expanding this project to provide an even more enriching user experience.
+
+(PS: You can find the back-end in another repository named backend_waagn_bi)
 ___________________________________________
 ___________________________________________
 
@@ -20,3 +22,5 @@ Il y a six pages principales : la page d'accueil, l'inscription/la connexion, le
 La page de conseils offre une mine de connaissances culinaires grâce à des articles attrayants, tandis que la section consacrée à la science alimentaire explore les avantages nutritionnels de différents aliments. L'authentification est gérée en toute sécurité par un backend développé avec MongoDB, Express.js et Node.js, ce qui garantit la sécurité du stockage et de la vérification des données des utilisateurs.
 
 Ce projet MERN met en valeur mes compétences techniques et attise ma passion pour l'amélioration continue. Alors que je poursuis mon parcours de programmation, je m'engage à affiner et à développer ce projet afin d'offrir une expérience utilisateur encore plus enrichissante.
+
+(PS : Vous pouvez trouver le back-end dans un autre repository nommé backend_waagn_bi)
