@@ -44,7 +44,7 @@ function AppNavbar() {
                     </Nav>
 
                     <Nav className="login">
-                        <LinkContainer to="/login">
+                        <LinkContainer to="/signup">
                             <FaUser style={{ fontSize: '20px' }} />
                         </LinkContainer>
                     </Nav>

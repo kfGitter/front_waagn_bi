@@ -3,19 +3,39 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './styleP.css';
 import { LinkContainer } from "react-router-bootstrap";
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
+
+    // CONSTANTES
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [message, setMessage] = useState('');
+    const navigate = useNavigate();
 
+    // LOGIQUE
+    const handleSignup = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:5000/signup', { email, password });
+            setMessage('Inscription réussie!');
+            setTimeout(() => {
+                navigate('/login');
+            }, 2000);
+        } catch (err) {
+            setMessage(" Une erreur est survenue. Veuillez réessayer.");
+        }
+    };
+
+    // EXECUTION
     return (
-
         <div className='sgp-bd'>
             <div className="login-container">
                 <h2 className="login-title">CRÉER UN COMPTE</h2>
-                <p className="login-subtitle">Rejoignez-nous pour une delicieuse aventure! </p>
-                <Form className="login-form">
+                <p className="login-subtitle">Rejoignez-nous pour une délicieuse aventure!</p>
+                {message && <p>{message}</p>}
+                <Form className="login-form" onSubmit={handleSignup}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email ou pseudo</Form.Label>
                         <Form.Control

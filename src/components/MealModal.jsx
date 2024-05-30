@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
 function MealModal({
+    // USING THE API DATA
+    // THESE ARE KEY WITH A SPECIFIC VALUE FOR EACH MEAL
+    
     strMeal,
     strMealThumb,
     strTags,
